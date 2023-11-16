@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  application:
+    name: short-url
+
+naver:
+  client-id:
+  client-secret:
+
+#Feign
+feign:
+  naver:
+    url: https://openapi.naver.com/v1/util/shorturl
