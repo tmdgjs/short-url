@@ -16,6 +16,10 @@ public class ShortUrlDto {
     private String hash;
     private String originalUrl;
 
+    public static ShortUrlDto of (final String url, final String hash, final String originalUrl) {
+        return new ShortUrlDto(url, hash, originalUrl);
+    }
+
     public static ShortUrlDto of (final NaverShortUrlDto naverShortUrlDto) {
         return new ShortUrlDto(
                 naverShortUrlDto.getResultUrl(),
